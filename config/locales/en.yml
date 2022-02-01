@@ -1,0 +1,10 @@
+en:
+  application:
+    exceptions:
+      record_not_found: 'Record(s) not found: %{resource}'
+      missing_parameter: Missing parameter %{parameters}
+  animal:
+    attributes:
+      adopted_at:
+        invalid_with_respect_to_joining_date: 'Adoption date must be greater than or equal to the Joining date'
+

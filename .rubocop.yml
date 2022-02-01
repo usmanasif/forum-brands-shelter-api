@@ -1,0 +1,22 @@
+inherit_from: .rubocop_todo.yml
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+  ExcludedMethods: ['describe', 'context']
+Style/Documentation:
+  Enabled: false
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/environments/*'
+    - 'bin/*'
+    - 'spec/**/*'
+  NewCops: enable
+Style/PercentLiteralDelimiters:
+  Enabled: true
+  PreferredDelimiters:
+    default: '[]'
+    '%i': '()'
+    '%w': '()'
